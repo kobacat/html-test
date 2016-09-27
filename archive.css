@@ -1,0 +1,1522 @@
+/*	-----------------------------------
+	Page Title
+	----------------------------------- */
+h1 a,
+h1 a:hover {
+	color: #000;
+	text-decoration: none;
+}
+a.icon-rss {
+	bottom: -2px;
+	color: #888;
+	display: inline-block;
+	font-family:'Lato', Arial, Helvetica, sans-serif;
+	font-weight: 400;
+	font-size: 12px;
+	position: relative;
+	text-decoration: none;
+	vertical-align: baseline;
+}
+	a.icon-rss:before {
+		bottom: 14px;
+		color: #ff8a0d;
+		font-family: 'icons';
+		font-size: 24px;
+	}
+	a.icon-rss:hover {
+		color: #ff8a0d;
+	}
+
+/*	-----------------------------------
+	Subnav
+	----------------------------------- */
+nav.subnav {
+	padding: 10px 0 20px;
+	position: relative;
+}
+
+
+	/* Top/Bottom border gradient */
+	nav.subnav:before,
+	nav.subnav:after {
+		background: url('../../image/global/gradient/linear-left-fff-e2-fff.png') center top repeat-y;
+		background-size: 100%;
+		background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, #e2e2e2 50%, rgba(255,255,255,0) 100%);
+		background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, #e2e2e2 50%, rgba(255,255,255,0) 100%);
+		background: -o-linear-gradient(left, rgba(255,255,255,0) 0%, #e2e2e2 50%, rgba(255,255,255,0) 100%);
+		background: -ms-linear-gradient(left, rgba(255,255,255,0) 0%, #e2e2e2 50%, rgba(255,255,255,0) 100%);
+		background: linear-gradient(to right, rgba(255,255,255,0) 0%, #e2e2e2 50%, rgba(255,255,255,0) 100%);
+		display: block;
+		content: '';
+		height: 1px;
+		position: absolute;
+		width: 100%;
+	}
+	nav.subnav:before { top: 9px; }
+	nav.subnav:after  { bottom: 20px; }
+
+	/* Bar of Links */
+	nav.subnav ul {
+		background: #fff;
+		background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, #fff 10%, #fff 90%, rgba(255,255,255,0) 100%);
+		background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, #fff 10%, #fff 90%, rgba(255,255,255,0) 100%);
+		background: -o-linear-gradient(left, rgba(255,255,255,0) 0%, #fff 10%, #fff 90%, rgba(255,255,255,0) 100%);
+		background: -ms-linear-gradient(left, rgba(255,255,255,0) 0%, #fff 10%, #fff 90%, rgba(255,255,255,0) 100%);
+		background: linear-gradient(to right, rgba(255,255,255,0) 0%, #fff 10%, #fff 90%, rgba(255,255,255,0) 100%);
+		line-height: 0;
+		margin: 0;
+		padding: 0;
+	}
+	nav.subnav ul:after {
+		clear: both;
+		content: '';
+		display: block;
+	}
+		nav.subnav ul {
+			height: 50px;
+			width: 100%;
+		}
+			nav.subnav li {
+				border-left: 1px solid #e2e2e2;
+				display: table;
+				float: left;
+				height: 100%;
+				padding: 1px 0;
+				text-align: center;
+				vertical-align: middle;
+				width: 24%;
+			}
+			nav.subnav li:first-child {
+				border-left: none;
+			}
+				nav.subnav li a {
+					display: table-cell;
+					font-family:'Lato', Arial, Helvetica, sans-serif;
+	font-weight: 700;
+					font-size: 17px;
+					height: 100%;
+					line-height: 1.2;
+					position: relative;
+					text-decoration: none;
+					vertical-align: middle;
+					width: 100%;
+					color: #f01f00;
+				}
+					nav.subnav li a:hover {
+						outline: 1px solid #f01f00;
+						z-index: 1;
+					}
+
+				nav.subnav li.active a {
+					color: #777;
+					cursor: default;
+				}
+					nav.subnav li.active a:hover {
+						outline: none;
+					}
+	
+					
+
+				@media screen and (min-width: 769px) and (max-width: 890px) {
+					nav.subnav li a {
+						font-size: 15px;
+					}
+				}
+
+
+
+/*	-----------------------------------
+	Widget - News Tiles
+	----------------------------------- */
+ul.news-tiles {
+	margin: 0 auto 40px;
+	position: relative;
+}
+	ul.news-tiles li {
+		background: #ffffff;
+		border-bottom: 3px solid #e2e2e2;
+		border-left: 1px solid #e2e2e2;
+		border-right: 1px solid #e2e2e2;
+		border-top: 1px solid #e2e2e2;
+		border-radius: 3px;
+		display: inline-block;
+		height: 450px;
+		margin: 0 8px 16px;
+		overflow: hidden;
+		position: relative;
+		text-align: left;
+		vertical-align: top;
+		width: 306px;
+	}
+		ul.news-tiles li > a {
+			display: block;
+			height: 100%;
+			text-decoration: none;
+			width: 100%;
+		}
+			/* Banner Image */
+			ul.news-tiles div.banner {
+				text-align: center;
+			}
+				/* Add space above loading image */
+				ul.news-tiles img[src*="load"] {
+					margin-top: 20px;
+				}
+
+
+			/* Date */
+			ul.news-tiles div.date {
+				display: inline-block;
+				margin: 15px 0 28px 10px;
+			}
+			/* System Logo */
+			/* Default styles are using 2x scale images in the sprite for retina devices */
+			ul.news-tiles div.logo {
+				background: url('../../image/page/whats-new/sprite-logos.png') right 0 no-repeat;
+				background-size: 120px;
+				display: none;
+				float: right;
+				height: 20px;
+				margin: 15px 5px 0 0;
+				text-indent: -99999em;
+				width: 55%;
+			}
+			/* Title */
+			ul.news-tiles h2 {
+				height: 108px;
+				margin: 0 10px;
+			}
+			/* Description */
+			ul.news-tiles p {
+				color: #777;
+				margin: 0 10px 20px;
+				min-height: 60px;
+			}
+			/* Read More button */
+			ul.news-tiles span.link {
+				color: #2576bc;
+				font-family:'Lato', Arial, Helvetica, sans-serif;
+				font-weight: 700;
+			}
+
+	/* --- No Banner Image Overrides ---*/
+	ul.news-tiles li.no-banner {}
+
+		ul.news-tiles li.no-banner h2 {
+			height: 124px;
+		}
+		ul.news-tiles li.no-banner p {
+			min-height: 220px;
+		}
+		ul.news-tiles li div.date {
+			border-color: #e2e2e2;
+		}
+
+
+	/* --- Wii U Overrides ---*/
+	ul.news-tiles li.WiiU {
+		border-bottom-color: #0096c8;
+	}
+		ul.news-tiles li.WiiU div.date {
+			border-color: #0096c8;
+		}
+		ul.news-tiles li.WiiU div.logo {
+			background-position: right -20px;
+			display: block;
+		}
+
+	/* --- 3DS Overrides ---*/
+	ul.news-tiles li.threeDS {
+		border-bottom-color: #ce181e;
+	}
+		ul.news-tiles li.threeDS div.date {
+			border-color: #ce181e;
+		}
+		ul.news-tiles li.threeDS div.logo {
+			background-position: right -80px;
+			display: block;
+		}
+
+/*	-----------------------------------
+	Detail Page
+	----------------------------------- */
+article.column {
+	border: 1px solid #e2e2e2;
+	border-radius: 3px;
+}
+
+aside ul.news-tiles {
+	text-align: center;
+}
+
+/*	-----------------------------------
+	Detail Page Hero
+	----------------------------------- */
+div.article-hero {
+	background: url('../../image/global/gradient/linear-left-fff-f2-fff.png') center top repeat-y;
+	background-size: 100%;
+	background: -moz-linear-gradient(left, #fff 0%, #f2f2f2 50%, #fff 100%);
+	background: -webkit-linear-gradient(left, #fff 0%,#f2f2f2 50%, #fff 100%);
+	background: -o-linear-gradient(left, #fff 0%,#f2f2f2 50%, #fff 100%);
+	background: -ms-linear-gradient(left, #fff 0%,#f2f2f2 50%, #fff 100%);
+	background: linear-gradient(to right, #fff 0%,#f2f2f2 50%, #fff 100%);
+}
+	div.article-hero div.hero-details {
+		height: 60px;
+		padding: 0 40px;
+		position: relative;
+	}
+		/* Date */
+		div.article-hero div.date {
+			bottom: 0;
+			position: absolute;
+		}
+		/* Social icons */
+		div.article-hero ul.hero-social {
+			display: block;
+			left: 0;
+			position: absolute;
+			text-align: center;
+			top: 5px;
+			width: 100%;
+		}
+			div.article-hero ul.hero-social li {
+				display: inline-block;
+				height: 40px;
+				margin: 0 5px;
+				width: 40px;
+			}
+				div.article-hero ul.hero-social a {
+					background: #fff;
+					display: block;
+					font-size: 46px;
+					height: 42px;
+					margin: 2px;
+					padding: 5px;
+					position: relative;
+					text-decoration: none;
+					text-indent: -99999em;
+					width: 42px;
+				}
+				div.article-hero a.icon-facebook	{ color: #4b689f; }
+				div.article-hero a.icon-twitter		{ color: #00aee8; }
+
+				div.article-hero ul.hero-social a:before {
+					height: 43px;
+					left: -2px;
+					top: -2px;
+					width: 43px;
+				}
+
+		/* System Logo */
+		div.article-hero div.hero-logo {
+			background: url('../../image/page/whats-new/sprite-logos.png') right 0 no-repeat;
+			display: block;
+			float: right;
+			height: 20px;
+			margin: 20px 0 0;
+			text-indent: -99999em;
+			width: 150px;
+		}
+		article.WiiU div.hero-logo 		{ background-position: right 0; }
+		article.threeDS div.hero-logo 	{ background-position: right -120px; }
+
+/*	-----------------------------------
+	Detail Page Content
+	----------------------------------- */
+div.article-content {
+	padding: 40px;
+}
+
+/* 	================================================
+
+	DESKTOP VIEW
+
+	================================================ */
+@media screen and (min-width: 769px) {
+
+	aside > a.btn {
+		margin-bottom: 40px;
+	}
+
+/*	-----------------------------------
+	Widget - News Tiles
+	----------------------------------- */
+
+	/* Use 1x scale images from sprite */
+	ul.news-tiles li div.logo {
+		background-size: 240px;
+	}
+
+	/* --- Default Hover State --- */
+	ul.news-tiles li:hover {
+		border-color: #999;
+	}
+		ul.news-tiles li:hover div.date {
+			border-color: #999;
+			color: #999;
+		}
+			ul.news-tiles li:hover span.link {
+				color: #3aa4ff;
+				text-decoration: underline;
+			}
+
+	/* --- Wii U Overrides ---*/
+	ul.news-tiles li.WiiU div.logo {
+		background-position: right 0;
+	}
+		/* Hover State */
+		ul.news-tiles li.WiiU:hover {
+			border-color: #0096c8;
+		}
+			ul.news-tiles li.WiiU:hover div.date {
+				border-color: #0096c8;
+				color: #0096c8;
+			}
+			ul.news-tiles li.WiiU:hover div.logo {
+				background-position: right -20px;
+			}
+
+	/* --- 3DS Overrides ---*/
+	ul.news-tiles li.threeDS div.logo {
+		background-position: right -120px;
+	}
+		/* Hover State */
+		ul.news-tiles li.threeDS:hover {
+			border-color: #ce181e;
+		}
+			ul.news-tiles li.threeDS:hover div.date {
+				border-color: #ce181e;
+				color: #ce181e;
+			}
+			ul.news-tiles li.threeDS:hover div.logo {
+				background-position: right -140px;
+			}
+
+/*	-----------------------------------
+	Widget - News Tiles - Sidebar
+	----------------------------------- */
+	aside ul.news-tiles {
+		margin-bottom: 0;
+	}
+		aside ul.news-tiles li {
+			height: auto;
+			margin: 0 0 20px;
+			width: 100%;
+		}
+			/* System Logo */
+			aside ul.news-tiles li div.logo {
+				width: 50%;
+			}
+
+			/* Title */
+			aside ul.news-tiles li h2,
+			aside ul.news-tiles li.no-banner h2 {
+				height: auto;
+				margin-bottom: 20px;
+			}
+			aside ul.news-tiles li h2.b7 {
+				font-size: 16px;
+			}
+
+			/* --- 3DS Overrides --- */
+			/* Use 2x scale images from sprite */
+			aside ul.news-tiles li.threeDS div.logo {
+				background-position: right -80px;
+				background-size: 120px;
+			}
+				aside ul.news-tiles li.threeDS:hover div.logo {
+					background-position: right -100px;
+				}
+}
+
+
+
+
+/* 	================================================
+
+	TABLET VIEW
+
+	================================================ */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+/*	-----------------------------------
+	Subnav
+	----------------------------------- */
+	nav.subnav ul li a {
+		font-size: 14px;
+	}
+
+/*	-----------------------------------
+	Widget - News Tiles
+	----------------------------------- */
+	ul.news-tiles li {
+		height: 460px;
+		margin: 5px;
+		width: 220px;
+	}
+		/* Title */
+		ul.news-tiles li h2 {
+			height: 124px;
+		}
+
+/*	-----------------------------------
+	Detail Page
+	----------------------------------- */
+	article.column {
+		margin-bottom: 30px;
+	}
+
+	aside h3 {
+		text-align: center;
+	}
+
+/*	-----------------------------------
+	Detail Page Hero
+	----------------------------------- */
+	div.article-hero div.hero-details {
+		padding: 0 20px;
+	}
+
+/*	-----------------------------------
+	Detail Page Content
+	----------------------------------- */
+	aside a.btn {
+		display: block;
+		margin: 0 auto;
+		max-width: 220px;
+	}
+}
+
+/* 	================================================
+
+	MOBILE VIEW
+
+	================================================ */
+@media screen and (max-width: 480px) {
+
+/*	-----------------------------------
+	Page Title
+	----------------------------------- */
+	a.icon-rss:before {
+		font-size: 18px;
+	}
+/*	-----------------------------------
+	Subnav
+	----------------------------------- */
+	nav.subnav {
+		height: auto;
+	}
+	nav.subnav:before,
+	nav.subnav:after {
+		display: none;
+	}
+
+	/* Bar of Links */
+	nav.subnav ul {
+		height: auto;
+		padding-top: 52px;
+		position: relative;
+		text-align: center;
+	}
+	nav.subnav ul:after {
+		display: none;
+	}
+		nav.subnav ul li {
+			border: 1px solid #e2e2e2;
+			float: none;
+			height: auto;
+			line-height: 50px;
+			padding: 0;
+			width: 100%;
+		}
+		nav.subnav ul li:first-child {
+			border-left: 1px solid #e2e2e2;
+			border-top: 1px solid #e2e2e2;
+		}
+		nav.subnav ul li:not([class="active"]) {
+			display: none;
+		}
+		nav.subnav ul.open li {
+			display: block;
+		}
+			nav.subnav ul li a {
+				background: #f2f2f2;
+				display: block;
+				font-size: 20px;
+				height: auto;
+				line-height: inherit;
+				text-align: center;
+			}
+				nav.subnav ul li.active a span {
+					display: none;
+				}
+
+			/* Active State */
+			nav.subnav ul li.active {
+				display: block;
+				left: 0;
+				position: absolute;
+				top: 0;
+			}
+				nav.subnav ul li.active a {
+					background: #fff;
+				}
+					/* Border */
+					nav.subnav ul li.active a span {
+						display: inline-block;
+						margin-left: 10px;
+						vertical-align: middle;
+					}
+					/* Arrow Icon */
+					nav.subnav ul li.active a span:after {
+						border-left: 1px solid #e2e2e2;
+						color:  #f01f00;
+						content: '\e608';
+						display: inline-block;
+						font-family: 'icons';
+						line-height: 1.5;
+						padding-left: 10px;
+					}
+					nav.subnav ul.open li.active a span:after {
+						content: '\e60b';
+					}
+
+
+/*	-----------------------------------
+	Widget - News Tiles
+	----------------------------------- */
+	ul.news-tiles li {
+		font-size: 16px;
+		margin: 0 0 16px;
+	}
+
+/*	-----------------------------------
+	Detail Page
+	----------------------------------- */
+	article.column {
+		margin-bottom: 30px;
+	}
+
+/*	-----------------------------------
+	Detail Page Hero
+	----------------------------------- */
+	div.article-hero div.hero-details {
+		padding: 0 20px;
+	}
+		article.threeDS div.hero-logo 	{
+			background-position: 0 -100px;
+		}
+
+/*	-----------------------------------
+	Detail Page Content
+	----------------------------------- */
+	div.article-content {
+		padding: 20px;
+	}
+
+	aside a.btn {
+		display: block;
+		margin: 0 auto;
+		max-width: 210px;
+	}
+}
+
+
+/* 	================================================
+
+	Landing Page:
+	Force tiles to center within page while still being left aligned
+	desktop tile width = 326px - includes margin
+	tablet tile width = 232px - includes margin
+	mobile tile width = 306px - same as desktop minus margin
+
+	================================================ */
+@media screen and (max-width: 980px) {
+	body.whats-new ul.news-tiles {
+		width: 652px;
+	}
+}
+@media screen and (max-width: 768px) {
+	body.whats-new ul.news-tiles {
+		width: 698px;
+	}
+}
+@media screen and (max-width: 720px) {
+	body.whats-new ul.news-tiles {
+		width: 464px;
+	}
+}
+@media screen and (max-width: 480px) {
+	body.whats-new ul.news-tiles {
+		width: 306px;
+	}
+}
+
+
+/* 	================================================
+
+	Detail Page:
+	Hide last child when tiles wrap
+
+	================================================ */
+@media screen and (min-width: 481px) and (max-width: 714px) {
+	aside ul.news-tiles li:last-child {
+		display: none;
+	}
+}
+
+/* 	================================================
+
+	3DS Browser Specific Styles
+
+	================================================ */
+
+body.nin3DS ul.news-tiles li {
+	font-size: 14px;
+}
+
+
+/*	-----------------------------------
+	Backgrounds
+	----------------------------------- */
+/* --- Gradient that stretches the browser width --- */
+.container-gradient {
+	position: relative;
+}
+	.container-gradient:before {
+		background: url('../image/global/gradient/radial-f2-fff.png') center top no-repeat;
+		background-size: 100%;
+		background: -moz-radial-gradient(top, ellipse cover,  #f2f2f2 0%, rgba(255,255,255,0) 90%);
+		background: -webkit-gradient(radial, center top, 0px, center top, 100%, color-stop(0%,#f2f2f2), color-stop(90%,rgba(255,255,255,0)));
+		background: -webkit-radial-gradient(top, ellipse cover,  #f2f2f2 0%,rgba(255,255,255,0) 90%);
+		background: -o-radial-gradient(top, ellipse cover,  #f2f2f2 0%,rgba(255,255,255,0) 90%);
+		background: -ms-radial-gradient(top, ellipse cover,  #f2f2f2 0%,rgba(255,255,255,0) 90%);
+		background: radial-gradient(ellipse at top,  #f2f2f2 0%, rgba(255,255,255,0) 90%);
+		content: '';
+		height: 150px;
+		left: 0;
+		position: absolute;
+		width: 100%;
+	}
+	/* Gradient on main content */
+	div#page-container.container-gradient:before {
+		top: 150px;
+	}
+	/* Gradient on specific sections */
+	.container-gradient:before {
+		top: 87px;
+	}
+		.container-gradient .page-content > .row {
+			margin-bottom: 60px;
+			padding-top: 25px;
+		}
+
+
+/* --- Gradient that is within content --- */
+.content-gradient {
+	background: url('../image/global/gradient/radial-f2-fff.png') center top no-repeat;
+	background-size: 100%;
+	background: -moz-radial-gradient(top, ellipse cover,  #f2f2f2 0%, #fff 50%);
+	background: -webkit-gradient(radial, center top, 0px, center top, 100%, color-stop(0%,#f2f2f2), color-stop(50%,#fff));
+	background: -webkit-radial-gradient(top, ellipse cover,  #f2f2f2 0%,#fff 50%);
+	background: -o-radial-gradient(top, ellipse cover,  #f2f2f2 0%,#fff 50%);
+	background: -ms-radial-gradient(top, ellipse cover,  #f2f2f2 0%,#fff 50%);
+	background: radial-gradient(ellipse at top,  #f2f2f2 0%, #fff 50%);
+	margin-bottom: 80px;
+	padding-top: 25px;
+	position: relative;
+}
+/* --- Gradient that is within content but stretches full browser width --- */
+.content-gradient-after {
+	position: relative;
+}
+	.content-gradient-after:after {
+		background: url('../image/global/gradient/radial-f2-fff.png') center top no-repeat;
+		background-size: 100%;
+		background: -moz-radial-gradient(top, ellipse cover,  #f2f2f2 0%, rgba(255,255,255,0) 90%);
+		background: -webkit-gradient(radial, center top, 0px, center top, 100%, color-stop(0%,#f2f2f2), color-stop(90%,rgba(255,255,255,0)));
+		background: -webkit-radial-gradient(top, ellipse cover,  #f2f2f2 0%,rgba(255,255,255,0) 90%);
+		background: -o-radial-gradient(top, ellipse cover,  #f2f2f2 0%,rgba(255,255,255,0) 90%);
+		background: -ms-radial-gradient(top, ellipse cover,  #f2f2f2 0%,rgba(255,255,255,0) 90%);
+		background: radial-gradient(ellipse at top,  #f2f2f2 0%, rgba(255,255,255,0) 90%);
+		bottom: -155px;
+		content: '';
+		height: 150px;
+		left: -50%;
+		position: absolute;
+		right: -50%;
+		width: 200%;
+	}
+
+/*	-----------------------------------
+	Platform Indicators
+	----------------------------------- */
+
+/* --- Border --- */
+.threeDS {
+	border-bottom: 3px solid #ce181e;
+}
+.WiiU {
+	border-bottom: 3px solid #0096c8;
+}
+
+/* --- Date with Border --- */
+.date {
+	border-bottom: 3px solid #e2e2e2;
+	color: #999;
+	display: inline-block;
+	font-size: 16px;
+	font-family:'Lato', Arial, Helvetica, sans-serif;
+	font-weight: 700;
+	padding-bottom: 20px;
+}
+	.threeDS .date,
+	.date.threeDS {
+		border-color: #ce181e;
+	}
+	.WiiU .date,
+	.date.WiiU {
+		border-color: #0096c8;
+	}
+
+/*	-----------------------------------
+	Buttons
+	----------------------------------- */
+/* --- Default button --- */
+.btn {
+	background: #2576bc;
+	border: 1px solid #1660a0;
+	border-radius: 2px;
+	color: #fff;
+	display: inline-block;
+	font-family:'Lato', Arial, Helvetica, sans-serif;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 28px;
+	padding: 10px 0;
+	text-align: center;
+	text-decoration: none;
+	width: 100%;
+}
+	.btn:hover {
+		background: #3aa4ff;
+		border-color: #3aa4ff;
+		color: #fff;
+		text-decoration: none;
+	}
+
+	/* --- White button --- */
+	/* --- Preview button --- */
+	.btn-white,
+	.btn-preview {
+		background: #fff;
+		border-color: #e2e2e2;
+		color: #2576bc;
+	}
+		.btn-white:hover,
+		.btn-preview:hover {
+			background: #fff;
+			border-color: #3aa4ff;
+			color: #3aa4ff;
+		}
+
+	/* --- Grey button --- */
+	.btn-grey {
+		background: #888;
+		border-color: #888;
+		color: #fff;
+	}
+		.btn-grey:hover {
+			background: #b1b1b1;
+			border-color: #b1b1b1;
+			color: #fff;
+		}
+
+	/* --- eShop button --- */
+	.btn-eshop {
+		background: #fff;
+		border-color: #e2e2e2;
+		color: #484848;
+	}
+		/* logo as an icon font */
+		.btn-eshop span.icon-eshop,
+		.btn-eshop span.icon-eshop-nin {
+			display: inline-block;
+			position: relative;
+			text-indent: -99999em;
+		}
+		.btn-eshop span.icon-eshop		{ width: 58px; }
+		.btn-eshop span.icon-eshop-nin	{ width: 78px; }
+
+			.btn-eshop span.icon-eshop:before {
+				bottom: -2px;
+				color: #ff7d00;
+			}
+			.btn-eshop span.icon-eshop-nin:before {
+				bottom: -2px;
+				color: #8c8c8c;
+			}
+		/* hover state */
+		.btn-eshop:hover {
+			background: #fff;
+			border-color: #ff7d00;
+			color: #ff7d00;
+		}
+	/* --- eShop button with smaller orange text --- */
+	.btn-eshop.orange {
+		color: #ff7d00;
+		font-size: 18px;
+	}
+		.btn-eshop.orange span.icon-eshop:before,
+		.btn-eshop.orange span.icon-eshop-nin:before {
+			font-size: 20px;
+		}
+
+	/* --- Official Site button --- */
+	/* --- Preview button --- */
+	.btn-site,
+	.btn-preview {
+		padding: 5px 0;
+	}
+
+	/* --- Preview button --- */
+	.btn-preview {
+		font-size: 18px;
+	}
+
+/* --- Text button with arrow --- */
+a.text-btn-arrow {
+	white-space: nowrap;
+}
+	a.text-btn-arrow:after {
+		content: '\e606';
+		display: inline-block;
+		font-family: 'icons';
+		font-size: 80%;
+		height: 20px;
+		position: relative;
+		width: 20px;
+	}
+
+
+/*	-----------------------------------
+	Lists
+	----------------------------------- */
+div.cms-content ul,
+ul.bullets {
+	padding-left: 15px;
+}
+	div.cms-content ul li,
+	ul.bullets li {
+		margin-bottom: 20px;
+		position: relative;
+	}
+	div.cms-content ul li:before,
+	ul.bullets li:before {
+		color: #0096c8;
+		content: '\2022';
+		display: block;
+		font-size: 17px;
+		left: -15px;
+		position: absolute;
+		top: 0;
+	}
+
+
+/*	-----------------------------------
+	Form Elements
+	----------------------------------- */
+/* --- Custom Checkboxes --- */
+input[type="checkbox"] {
+	opacity: 0;
+	position: absolute;
+}
+	input[type="checkbox"] + label {
+		clear: both;
+		display: block;
+		font-family:'Lato', Arial, Helvetica, sans-serif;
+	font-weight: 700;
+		margin-bottom: 12px;
+		padding-left: 25px;
+		position: relative;
+	}
+	/* Styled pseudo input */
+	input[type="checkbox"] + label:before {
+		background: #dbdbdb;
+		border-radius: 2px;
+		color: #dbdbdb;
+		content: '\e620';
+		display: block;
+		font-family: 'icons';
+		font-size: 14px;
+		height: 20px;
+		left: 0;
+		line-height: 20px;
+		margin-right: 10px;
+		position: absolute;
+		text-align: center;
+		top: -2px;
+		width: 20px;
+	}
+	/* Focus state */
+	input[type="checkbox"]:focus + label:before {
+		outline: 1px dotted #3aa4ff;
+	}
+	/* Active state */
+	input[type="checkbox"]:checked + label {
+		color: #2576bc;
+	}
+	input[type="checkbox"]:checked + label:before {
+		background: #2576bc;
+		color: #fff;
+	}
+
+
+/*	-----------------------------------
+	Pagination
+	----------------------------------- */
+div.pagination-bar {
+	border-bottom: 1px solid #e2e2e2;
+	border-top: 1px solid #e2e2e2;
+	margin-bottom: -1px;
+}
+	/* General Styles */
+	div.pagination-bar ul {
+		display: inline-block;
+		font-family:'Lato', Arial, Helvetica, sans-serif;
+	font-weight: 700;
+		font-size: 14px;
+		line-height: 28px;
+		height: 100%;
+		vertical-align: top;
+		white-space: nowrap;
+	}
+	div.pagination-bar ul:after {
+		clear: both;
+		content: '';
+		display: block;
+	}
+		div.pagination-bar li {
+			display: inline-block;
+		}
+
+	/* Sort Options */
+	div.pagination-bar ul.options {
+		font-size: 16px;
+		padding: 10px 0;
+		width: 50%;
+	}
+	div.pagination-bar ul.sort {
+		float: left;
+	}
+	div.pagination-bar ul.items {
+		text-align: right;
+	}
+		ul.options li {
+			border-left: 1px solid #e2e2e2;
+			font-family:'Lato', Arial, Helvetica, sans-serif;
+	font-weight: 400;
+		}
+		ul.options li:nth-child(1),
+		ul.options li:nth-child(2) {
+			border: none;
+		}
+			ul.options li a {
+				display: block;
+				font-family:'Lato', Arial, Helvetica, sans-serif;
+	font-weight: 700;
+				padding: 0 10px;
+			}
+			ul.options li.active a {
+				color: #777;
+				font-family:'Lato', Arial, Helvetica, sans-serif;
+	font-weight: 400;
+			}
+				ul.options li.active a:hover {
+					color: #777;
+					cursor: default;
+					text-decoration: none;
+				}
+
+	/* Pagination - Pages */
+	div.pagination-bar div.bottom-row {
+		clear: both;
+		display: inline-block;
+		text-align: center;
+		width: 100%;
+	}
+		div.bottom-row:before {
+			background: #e2e2e2;
+			content: '';
+			display: block;
+			height: 1px;
+			left: 0;
+			position: absolute;
+			width: 100%;
+		}
+		div.pagination-bar ul.pagination {
+			padding: 10px 10px 10px 0;
+		}
+			ul.pagination li {
+				min-width: 28px;
+				text-align: center;
+			}
+				ul.pagination li a {
+					display: block;
+					height: 100%;
+					width: 100%;
+				}
+				ul.pagination li.active a {
+					background: #f5f5f5;
+					border-radius: 50%;
+					color: #777;
+				}
+				ul.pagination li a:hover {
+					color: #3aa4ff;
+				}
+
+				ul.pagination li.ellipses a {
+					color: #777;
+				}
+					ul.pagination li.ellipses a:hover {
+						color: #777;
+						cursor: default;
+						text-decoration: none;
+					}
+
+		/* Pagination - Prev/Next Arrows */
+		div.pagination-bar ul.pagination-nav {}
+			ul.pagination-nav li {
+				border-left: 1px solid #e2e2e2;
+				border-right: 1px solid #e2e2e2;
+				display: block;
+				float: left;
+				height: 48px;
+				margin-left: -1px;
+				position: relative;
+				text-indent: -99999em;
+				vertical-align: top;
+				width: 50px;
+			}
+				ul.pagination-nav li a {
+					display: block;
+					height: 100%;
+					width: 100%;
+				}
+				ul.pagination-nav li a:before {
+					font-size: 24px;
+					height: 100%;
+					padding-top: 12px;
+					text-align: center;
+					width: 100%;
+				}
+				ul.pagination-nav li a:hover {
+					color: #3aa4ff;
+				}
+				ul.pagination-nav li.disabled a {
+					color: #dbdbdb;
+					cursor: default;
+				}
+
+/*	-----------------------------------
+	Preview Popup Window
+	----------------------------------- */
+div.preview-overlay {
+	background: rgba(255,255,255,0);
+	height: 100%;
+	left: 0;
+	top: 0;
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+}
+/* --- Preview Window --- */
+div.preview-container {
+	background: #fff;
+	box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+	max-width: 100%;
+	opacity: 0;
+	position: absolute;
+	width: 600px;
+	z-index: 2;
+
+	min-height: 200px;
+}
+div.preview-container.loading {
+	background: #fff url('../image/global/loader.gif') center center no-repeat;
+}
+div.preview-container:before,
+div.preview-container:after {
+	background: #e2e2e2;
+	content: '';
+	position: absolute;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+div.preview-container:before {
+	height: 30px;
+	top: 0;
+}
+div.preview-container:after {
+	height: 5px;
+	bottom: 0;
+}
+	/* Close Button */
+	div.preview-container a.preview-close {
+		background: #fff;
+		border-radius: 2px;
+		height: 20px;
+		position: absolute;
+		right: 5px;
+		text-indent: -99999em;
+		text-decoration: none;
+		top: 5px;
+		width: 20px;
+		z-index: 1;
+	}
+		div.preview-container a.preview-close:before {
+			color: #2576bc;
+			font-size: 12px;
+			line-height: 20px;
+			width: 100%;
+			text-align: center;
+		}
+		div.preview-container a.preview-close:hover:before {
+			color: #3aa4ff;
+		}
+
+	/* Content Container Grid */
+	div.preview-container div.preview-content {
+		border-bottom: 5px solid #e2e2e2;
+		border-top: 30px solid #e2e2e2;
+		padding: 20px;
+	}
+	div.preview-container div.preview-content[data-system*="DS"] {
+		border-color: #ce181e;
+	}
+	div.preview-container div.preview-content[data-system*="Wii"] {
+		border-color: #0096c8;
+	}
+	div.preview-container div.preview-content:before {
+		color: #fff;
+		display: block;
+		font-family: 'icons';
+		left: 0;
+		line-height: 30px;
+		position: absolute;
+		text-align: center;
+		top: 0;
+		width: 100%;
+	}
+	div.preview-container div.preview-content[data-system*="DS"]:before {
+		content: '\e619';
+		font-size: 30px;
+	}
+	div.preview-container div.preview-content[data-system*="Wii"]:before {
+		content: '\e61a';
+		font-size: 16px;
+	}
+		/* Video Player */
+		div.preview-content div.video-player {
+			margin-bottom: 20px;
+		}
+
+		/* Title & Details */
+		div.preview-info {}
+			div.preview-info li {
+				margin-bottom: 5px;
+			}
+				div.preview-info li span {
+					color: #484848;
+					font-family:'Lato', Arial, Helvetica, sans-serif;
+	font-weight: 700;
+				}
+		/* Learn More Buttons */
+		div.preview-buttons {}
+			div.preview-buttons li {
+				margin-bottom: 10px;
+				text-align: center;
+			}
+
+/* 	================================================
+
+	DESKTOP VIEW
+
+	================================================ */
+@media screen and (min-width: 769px) {
+
+	/* Hover state */
+	input[type="checkbox"] + label:hover {
+		color: #3aa4ff;
+		cursor: pointer;
+	}
+	input[type="checkbox"] + label:hover:before {
+		color: #c1c1c1;
+	}
+	/* Active state */
+	input[type="checkbox"]:checked + label {
+		color: #2576bc;
+	}
+	input[type="checkbox"]:checked + label:before {
+		background: #2576bc;
+		color: #fff;
+	}
+
+/*	-----------------------------------
+	Pagination
+	----------------------------------- */
+	/* Sort Options */
+	div.pagination-bar ul.options {
+		border-bottom: none;
+		width: auto;
+	}
+	div.pagination-bar ul.sort {
+		float: left;
+		padding-right: 3%;
+	}
+	div.pagination-bar ul.items {
+		text-align: left;
+	}
+	/* Pagination - Pages */
+	div.pagination-bar div.bottom-row {
+		clear: none;
+		float: right;
+		width: auto;
+	}
+		div.bottom-row:before {
+			display: none;
+		}
+}
+
+/* 	================================================
+
+	TABLET VIEW
+
+	================================================ */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+/*	-----------------------------------
+	Backgrounds
+	----------------------------------- */
+	div#page-container.container-gradient:before {
+		top: 160px;
+	}
+
+/*	-----------------------------------
+	Platform Indicators
+	----------------------------------- */
+	/* --- Date with Border --- */
+	.date {
+		color: #999;
+	}
+
+/*	-----------------------------------
+	Buttons
+	----------------------------------- */
+	.btn,
+	.btn-white,
+	.btn-grey {
+		font-size: 18px;
+	}
+
+}
+
+
+/* 	================================================
+
+	MOBILE VIEW
+
+	================================================ */
+@media screen and (max-width: 480px) {
+
+
+
+
+/*	-----------------------------------
+	Backgrounds
+	----------------------------------- */
+	div#page-container.container-gradient:before {
+		top: 140px;
+	}
+	.page-gradient {
+		margin-bottom: 40px;
+	}
+
+/*	-----------------------------------
+	Buttons
+	----------------------------------- */
+	.btn,
+	.btn-white,
+	.btn-grey {
+		font-size: 18px;
+	}
+
+
+/*	-----------------------------------
+	Form Elements
+	----------------------------------- */
+	/* --- Custom Checkboxes --- */
+	input[type="checkbox"] + label {
+		padding-left: 0;
+	}
+	/* Styled pseudo input */
+	input[type="checkbox"] + label:before {
+		left: auto;
+		right: 0;
+	}
+	
+
+/*	-----------------------------------
+	Pagination
+	----------------------------------- */
+	/* General Styles */
+	div.pagination-bar ul {
+		line-height: 20px;
+	}
+	/* Sort Options */
+	div.pagination-bar ul.options {
+		padding: 10px 0;
+	}
+		ul.options li a {
+			padding: 0 5px;
+		}
+
+	/* Pagination - Pages */
+	div.pagination-bar ul.pagination {
+		line-height: 30px;
+		padding: 5px 15px 0 5px;
+	}
+		ul.pagination li {
+			margin-right: 5px;
+			min-width: 30px;
+		}
+		ul.pagination li.ellipses {
+			min-width: 10px;
+		}
+
+	/* Pagination - Prev/Next Arrows */
+	ul.pagination-nav li {
+		height: 40px;
+		width: 30px;
+	}
+		ul.pagination-nav li a:before {
+			font-size: 20px;
+			padding-top: 10px;
+		}
+
+/*	-----------------------------------
+	Accordion Links (similar to footer)
+	----------------------------------- */
+	/* --- Wrapper --- */
+	body.responsive .accordion {
+		border-bottom: 10px solid #2576bc;
+		max-width: 100%;
+		width: 100%;
+	}
+		/* --- Row --- */
+		.accordion-row {}
+
+			/* --- Expandable Column --- */
+			.accordion-row .column {
+				background: #fff;
+				max-width: 100%;
+				padding: 0;
+			}
+				/* General Styles */
+				.accordion-row .column ul li {
+					padding: 0;
+					margin-bottom: 15px;
+				}
+					/* Links */
+					.accordion-row .column li a {
+						color: #484848;
+						display: block;
+						font-family:'Lato', Arial, Helvetica, sans-serif;
+	font-weight: 300;
+						font-size: 18px;
+					}
+					/* Subhead Links */
+					.accordion-row .column a.b2 {
+						font-size: 22px;
+						font-family:'Lato', Arial, Helvetica, sans-serif;
+	font-weight: 400;
+						margin-bottom: 20px;
+					}
+					.accordion-row .column.closed ul {
+						display: none;
+					}
+
+				/* Headings */
+				.accordion-row .column  h2 {
+					background: #fafafa;
+					border-top: 1px solid #e2e2e2;
+					color: #2576bc;
+					display: block;
+					font-family:'Lato', Arial, Helvetica, sans-serif;
+	font-weight: 700;
+					font-size: 20px;
+					height: 60px;
+					margin: 0;
+					padding: 20px;
+					position: relative;
+				}
+				.accordion-row .column  h2.trigger {
+					border-bottom: 1px solid #e2e2e2;
+				}
+				.accordion-row .column  h2 a {
+					color: #2576bc;
+					display: block;
+					height: 100%;
+					width: 100%;
+				}
+					/* Arrow Icon */
+					.accordion-row .column  h2.trigger:after {
+						content: '\e60f';
+						display: block;
+						font-family: 'icons';
+						font-size: 20px;
+						position: absolute;
+						right: 25px;
+						top: 20px;
+					}
+
+				/* Closed State */
+				.accordion-row .column.closed h2 {
+					border-bottom: none;
+				}
+					.accordion-row .column.closed h2:after {
+						content: '\e60c';
+					}
+
+				/* --- Open Drawer Links --- */
+				.accordion-row .column  > ul {
+					padding: 20px 20px 10px;
+					display: none;
+				}
+}
+
+/* 	================================================
+
+	3DS Browser Specific Styles
+
+	================================================ */
+body.nin3DS .date {
+	font-size: 14px;
+}
+
+body.nin3DS .accordion-row .column h2 {
+	font-size: 18px;
+}
+
+ul.news-tiles h2 {
+height: 64px;
+}
+
+
+@media screen and (max-width: 768px) and (min-width: 481px){
+	ul.news-tiles li {
+	width: 46%;
+	}
+}

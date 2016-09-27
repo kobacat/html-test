@@ -1,0 +1,183 @@
+/*	-----------------------------------
+	Font Declarations
+	----------------------------------- */
+@font-face {
+	font-family: 'icons';
+	src:url('../font/icons/icons.eot');
+	src:url('../font/icons/icons.eot?#iefix') format('embedded-opentype'),
+		url('../font/icons/icons.ttf') format('truetype'),
+		url('../font/icons/icons.woff') format('woff'),
+		url('../font/icons/icons.svg#icons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+[class*="icon-"] {
+	font-family: 'icons';
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	line-height: 1;
+	speak: none;
+	text-transform: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+[class*="icon-"]:before {
+	display: block;
+	position: absolute;
+	text-indent: 0;
+}
+
+/* Logos */
+.icon-facebook:before	{ content: "\e616"; }
+.icon-instagram:before 	{ content: "\e615"; }
+.icon-tumblr:before		{ content: "\e614"; }
+.icon-twitter:before	{ content: "\e613"; }
+.icon-youtube:before	{ content: "\e612"; }
+.icon-3ds:before		{ content: "\e619"; }
+.icon-wiiu:before		{ content: "\e61a"; }
+.icon-eshop-nin:before	{ content: "\e61e"; }
+.icon-eshop:before		{ content: "\e61f"; }
+
+/* Thick Pagination Arrow */
+.icon-arrow-01-up:before 	{ content: "\e603"; }
+.icon-arrow-01-right:before { content: "\e602"; }
+.icon-arrow-01-left:before 	{ content: "\e601"; }
+.icon-arrow-01-down:before 	{ content: "\e600"; }
+/* Thin Text Arrow */
+.icon-arrow-02-up:before 	{ content: "\e607"; }
+.icon-arrow-02-right:before { content: "\e606"; }
+.icon-arrow-02-left:before 	{ content: "\e605"; }
+.icon-arrow-02-down:before 	{ content: "\e604"; }
+/* Solid Triangle */
+.icon-arrow-03-up:before 	{ content: "\e60b"; }
+.icon-arrow-03-right:before { content: "\e60a"; }
+.icon-arrow-03-left:before 	{ content: "\e609"; }
+.icon-arrow-03-down:before 	{ content: "\e608"; }
+/* Accordion Arrows */
+.icon-arrow-04-up:before	{ content: "\e60f"; }
+.icon-arrow-04-right:before { content: "\e60e"; }
+.icon-arrow-04-left:before 	{ content: "\e60d"; }
+.icon-arrow-04-down:before 	{ content: "\e60c"; }
+
+/* Icons */
+.icon-x-thick:before 	{ content: "\e61b"; }
+.icon-x-thin:before 	{ content: "\e61c"; }
+.icon-search:before		{ content: "\e610"; }
+.icon-menu:before 		{ content: "\e611"; }
+.icon-rss:before 		{ content: "\e618"; }
+.icon-play:before 		{ content: "\e61d"; }
+.icon-check:before 		{ content: "\e620"; }
+.icon-top:before 		{ content: "\e621"; }
+
+
+@font-face {
+	font-family: 'LatoHairline';
+	src: url('../font/lato/Lato-Hai-webfont.eot');
+	src: url('../font/lato/Lato-Hai-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../font/lato/Lato-Hai-webfont.woff') format('woff'),
+		url('../font/lato/Lato-Hai-webfont.ttf') format('truetype'),
+		url('../font/lato/Lato-Hai-webfont.svg#LatoHairline') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'LatoHairlineItalic';
+	src: url('../font/lato/Lato-HaiIta-webfont.eot');
+	src: url('../font/lato/Lato-HaiIta-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../font/lato/Lato-HaiIta-webfont.woff') format('woff'),
+	url('../font/lato/Lato-HaiIta-webfont.ttf') format('truetype'),
+	url('../font/lato/Lato-HaiIta-webfont.svg#LatoHairlineItalic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'LatoLight';
+	src: url('../font/lato/Lato-Lig-webfont.eot');
+	src: url('../font/lato/Lato-Lig-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../font/lato/Lato-Lig-webfont.woff') format('woff'),
+		url('http://feffer.neocities.org/Lato-Light.ttf') format('truetype'),
+		url('../font/lato/Lato-Lig-webfont.svg#LatoLight') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'LatoLightItalic';
+	src: url('../font/lato/Lato-LigIta-webfont.eot');
+	src: url('../font/lato/Lato-LigIta-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../font/lato/Lato-LigIta-webfont.woff') format('woff'),
+		url('../font/lato/Lato-LigIta-webfont.ttf') format('truetype'),
+		url('../font/lato/Lato-LigIta-webfont.svg#LatoLightItalic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'LatoRegular';
+	src: url('../font/lato/Lato-Reg-webfont.eot');
+	src: url('../font/lato/Lato-Reg-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../font/lato/Lato-Reg-webfont.woff') format('woff'),
+		url('../font/lato/Lato-Reg-webfont.ttf') format('truetype'),
+		url('../font/lato/Lato-Reg-webfont.svg#LatoRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'LatoItalic';
+	src: url('../font/lato/Lato-RegIta-webfont.eot');
+	src: url('../font/lato/Lato-RegIta-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../font/lato/Lato-RegIta-webfont.woff') format('woff'),
+		url('../font/lato/Lato-RegIta-webfont.ttf') format('truetype'),
+		url('../font/lato/Lato-RegIta-webfont.svg#LatoItalic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'LatoBold';
+	src: url('../font/lato/Lato-Bol-webfont.eot');
+	src: url('../font/lato/Lato-Bol-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../font/lato/Lato-Bol-webfont.woff') format('woff'),
+		url('../font/lato/Lato-Bol-webfont.ttf') format('truetype'),
+		url('../font/lato/Lato-Bol-webfont.svg#LatoBold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'LatoBoldItalic';
+	src: url('../font/lato/Lato-BolIta-webfont.eot');
+	src: url('../font/lato/Lato-BolIta-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../font/lato/Lato-BolIta-webfont.woff') format('woff'),
+		url('../font/lato/Lato-BolIta-webfont.ttf') format('truetype'),
+		url('../font/lato/Lato-BolIta-webfont.svg#LatoBoldItalic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'LatoBlack';
+	src: url('../font/lato/Lato-Bla-webfont.eot');
+	src: url('../font/lato/Lato-Bla-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../font/lato/Lato-Bla-webfont.woff') format('woff'),
+		url('../font/lato/Lato-Bla-webfont.ttf') format('truetype'),
+		url('../font/lato/Lato-Bla-webfont.svg#LatoBlack') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'LatoBlackItalic';
+	src: url('../font/lato/Lato-BlaIta-webfont.eot');
+	src: url('../font/lato/Lato-BlaIta-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../font/lato/Lato-BlaIta-webfont.woff') format('woff'),
+		url('../font/lato/Lato-BlaIta-webfont.ttf') format('truetype'),
+		url('../font/lato/Lato-BlaIta-webfont.svg#LatoBlackItalic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

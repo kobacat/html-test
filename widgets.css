@@ -1,0 +1,1132 @@
+
+/*	-----------------------------------
+	Backgrounds
+	----------------------------------- */
+/* --- Gradient that stretches the browser width --- */
+.container-gradient {
+	position: relative;
+}
+	.container-gradient:before {
+		background: url('/images/global/gradient/radial-f2-fff.png') center top no-repeat;
+		background-size: 100%;
+		background: -moz-radial-gradient(top, ellipse cover,  #f2f2f2 0%, rgba(255,255,255,0) 90%);
+		background: -webkit-gradient(radial, center top, 0px, center top, 100%, color-stop(0%,#f2f2f2), color-stop(90%,rgba(255,255,255,0)));
+		background: -webkit-radial-gradient(top, ellipse cover,  #f2f2f2 0%,rgba(255,255,255,0) 90%);
+		background: -o-radial-gradient(top, ellipse cover,  #f2f2f2 0%,rgba(255,255,255,0) 90%);
+		background: -ms-radial-gradient(top, ellipse cover,  #f2f2f2 0%,rgba(255,255,255,0) 90%);
+		background: radial-gradient(ellipse at top,  #f2f2f2 0%, rgba(255,255,255,0) 90%);
+		content: '';
+		height: 150px;
+		left: 0;
+		position: absolute;
+		width: 100%;
+	}
+	/* Gradient on main content */
+	div#page-container.container-gradient:before {
+		top: 150px;
+	}
+	/* Gradient on specific sections */	
+	.container-gradient:before {
+		top: 40px;
+	}
+		.container-gradient .page-content > .row {
+			margin-bottom: 60px;
+			padding-top: 25px;
+		}
+
+/* --- Gradient that is within content --- */
+.content-gradient {
+	background: url('/images/global/gradient/radial-f2-fff.png') center top no-repeat;
+	background-size: 100%;
+	background: -moz-radial-gradient(top, ellipse cover,  #f2f2f2 0%, #fff 50%);
+	background: -webkit-gradient(radial, center top, 0px, center top, 100%, color-stop(0%,#f2f2f2), color-stop(50%,#fff));
+	background: -webkit-radial-gradient(top, ellipse cover,  #f2f2f2 0%,#fff 50%);
+	background: -o-radial-gradient(top, ellipse cover,  #f2f2f2 0%,#fff 50%);
+	background: -ms-radial-gradient(top, ellipse cover,  #f2f2f2 0%,#fff 50%);
+	background: radial-gradient(ellipse at top,  #f2f2f2 0%, #fff 50%);
+	margin-bottom: 80px;
+	padding-top: 25px;
+	position: relative;
+}
+
+/* --- Gradient that is within content but stretches full browser width --- */
+.content-gradient-after {
+	position: relative;
+}
+	.content-gradient-after:after {
+		background: url('../image/global/gradient/radial-f2-fff.png') center top no-repeat;
+		background-size: 100%;
+		background: -moz-radial-gradient(top, ellipse cover,  #f2f2f2 0%, rgba(255,255,255,0) 90%);
+		background: -webkit-gradient(radial, center top, 0px, center top, 100%, color-stop(0%,#f2f2f2), color-stop(90%,rgba(255,255,255,0)));
+		background: -webkit-radial-gradient(top, ellipse cover,  #f2f2f2 0%,rgba(255,255,255,0) 90%);
+		background: -o-radial-gradient(top, ellipse cover,  #f2f2f2 0%,rgba(255,255,255,0) 90%);
+		background: -ms-radial-gradient(top, ellipse cover,  #f2f2f2 0%,rgba(255,255,255,0) 90%);
+		background: radial-gradient(ellipse at top,  #f2f2f2 0%, rgba(255,255,255,0) 90%);
+		bottom: -155px;
+		content: '';
+		height: 150px;
+		left: -50%;
+		position: absolute;
+		right: -50%;
+		width: 200%;
+	}
+
+/*	-----------------------------------
+	Platform Indicators
+	----------------------------------- */
+
+/* --- Border --- */
+/*.threeDS {
+	border-bottom: 3px solid #49ac15;
+}
+.WiiU {
+	border-bottom: 3px solid #27285e;
+}*/
+
+/* --- Date with Border --- */
+.date {
+	border-bottom: 3px solid #dadada;
+	color: #999;
+	display: inline-block;
+	font-size: 16px;
+	font-family: 'LatoBold';
+	padding-bottom: 20px;
+}
+	.threeDS .date,
+	.date.album {
+		border-color: #49ac15;
+	}
+	.WiiU .date,
+	.date.announcement {
+		border-color: #27285e;
+	}
+
+/*	-----------------------------------
+	Buttons
+	----------------------------------- */
+/* --- Default button --- */
+.btn {
+	background: #2576bc;
+	border: 1px solid #1660a0;
+	border-radius: 2px;
+	color: #fff;
+	display: inline-block;
+	font-family: 'LatoBold';
+	font-size: 20px;
+	line-height: 28px;
+	padding: 10px 0;
+	text-align: center;
+	text-decoration: none;
+	width: 100%;
+}
+	.btn:hover {
+		background: #3aa4ff;
+		border-color: #3aa4ff;
+		color: #fff;
+		text-decoration: none;
+	}
+	
+	/* --- Display button as inline-block --- */
+	.btn-inline {
+		display: inline-block;
+		padding-left: 20px;
+		padding-right: 20px;
+		width: auto;
+	}
+
+	/* --- White button --- */
+	/* --- Preview button --- */
+	.btn-white,
+	.btn-preview {
+		background: #fff;
+		border-color: #dadada;
+		color: #2576bc;
+	}
+		.btn-white:hover,
+		.btn-preview:hover {
+			background: #fff;
+			border-color: #3aa4ff;
+			color: #3aa4ff;
+		}
+
+	/* --- White Transparent button --- */
+	.btn-white-transparent {
+		background: none;
+		border-color: #fff;
+		color: #fff;
+	}
+		.btn-white-transparent:hover {
+			background: #fff;
+			border-color: #fff;
+			color: #3aa4ff;
+		}
+
+	/* --- Grey button --- */
+	.btn-grey {
+		background: #888;
+		border-color: #888;
+		color: #fff;
+	}
+		.btn-grey:hover {
+			background: #b1b1b1;
+			border-color: #b1b1b1;
+			color: #fff;
+		}
+
+	/* --- eShop button --- */
+	.btn-eshop {
+		background: #fff;
+		border-color: #dadada;
+		color: #ff7d00;
+	}
+		/* logo as an icon font */
+		span.icon-eshop,
+		span.icon-eshop-nin {
+			display: inline-block;
+			position: relative;
+			text-indent: -99999em;
+		}
+		span.icon-eshop		{ /* width: 58px; */ width: 3em; }
+		span.icon-eshop-nin	{ /* width: 78px; */ width: 4em; }
+
+			span.icon-eshop:before {
+				bottom: -2px;
+				color: #ff7d00;
+			}
+			span.icon-eshop-nin:before {
+				bottom: -2px;
+				color: #8c8c8c;
+			}
+		/* hover state */
+		.btn-eshop:hover {
+			background: #fff;
+			border-color: #ff7d00;
+			color: #ff7d00;
+		}
+	/* --- eShop button with smaller orange text --- */
+	.btn-eshop.orange {
+		color: #ff7d00;
+		font-size: 18px;
+	}
+		.btn-eshop.orange span.icon-eshop:before,
+		.btn-eshop.orange span.icon-eshop-nin:before {
+			font-size: 20px;
+		}
+
+	/* --- Official Site button --- */
+	/* --- Preview button --- */
+	.btn-site,
+	.btn-preview {
+		padding: 5px 0;
+	}
+
+	/* --- Preview button --- */
+	.btn-preview {
+		font-size: 18px;
+	}
+	/* --- Large button --- */
+	.btn-large {
+		font-size: 30px;
+	}
+
+/* --- Text button with arrow --- */
+.text-btn-arrow {
+	/*white-space: nowrap;*/
+}
+	.text-btn-arrow:after {
+		content: '\e606';
+		display: inline-block;
+		font-family: 'icons';
+		font-size: 80%;
+		height: 20px;
+		position: relative;
+		width: 20px;
+	}
+
+/* --- Text button with circle plus --- */
+.text-btn-plus {
+	white-space: nowrap;
+}
+	.text-btn-plus:after {
+		border: 2px solid #2576bc;
+		border-radius: 50%;
+		content: '+';
+		display: inline-block;
+		font-family: 'LatoRegular';
+		font-size: 24px;
+		font-style: normal;
+		height: 26px;
+		line-height: 22px;
+		margin-left: 10px;
+		position: relative;
+		text-align: center;
+		width: 26px;
+	}
+	.text-btn-plus:hover:after {
+		border-color: #3aa4ff;
+	}
+
+/* --- Video thumbnail links --- */
+.modal-video-trigger {
+	display: inline-block;
+	position: relative;
+	text-decoration: none;
+}
+	.modal-video-trigger:before {
+		bottom: 20px;
+		color: rgba(255,255,255,0.8);
+		content: '\00a0\e61d\00a0'; /* add nbsp before and after to fix android bug */
+		display: block;
+		font-family: 'icons';
+		font-size: 50px;
+		height: 50px;
+		left: 0;
+		line-height: 50px;
+		position: absolute;
+		text-align: center;
+		width: 100%;
+	}
+	.modal-video-trigger:hover:before {
+		color: rgba(255,255,255,1);
+	}
+	.modal-video-trigger span.b8 {
+		display: block;
+		line-height: 1.2;
+		margin-bottom: 10px;
+		max-width: 166px;
+		text-align: left;
+	}
+	.modal-video-trigger img {
+		border-radius: 2px;
+		display: block;
+	}
+
+/* --- Split, single-row CTA buttons with top and bottom border --- */
+ul.split-cta {
+	border-top: 1px solid #dadada;
+	border-bottom: 1px solid #dadada;
+	line-height: 1.5;
+	margin-bottom: 20px;
+}
+
+	ul.split-cta li {
+		border-left: 1px solid #dadada;
+		display: inline-block;
+		padding: 10px 0;
+		margin: 0!important;
+	}
+	ul.split-cta li:first-child {
+		border: none;
+		text-align: right;
+		padding-right: 7%;
+	}
+	
+	ul.split-cta li:last-child {
+		text-align: left;
+		padding-left: 7%;
+	}	
+
+	@media screen and (max-width: 480px) {
+		ul.split-cta li {
+			border-left: none;
+			border-bottom: 1px solid #dadada;
+			line-height: 1.2;
+			
+		}
+		
+		ul.split-cta li:first-child {
+			border-bottom: 1px solid #dadada;
+			text-align: center;
+			padding-right: 0;
+		}
+		
+		ul.split-cta li:last-child {
+			border-bottom: none;
+			text-align: center;
+			padding-left: 0;
+		}
+	}
+
+
+/*	-----------------------------------
+	Lists
+	----------------------------------- */
+	
+.bullet-list {} /* for list in a container that can not be reached. i.e: CMS body text */
+
+div.cms-content ul,
+ul.bullets,
+.bullet-list ul {
+	padding-left: 15px;
+}
+	ul.bullets li,
+	div.cms-content ul li,
+	.bullet-list ul li {
+		line-height: 1.5;
+		margin-bottom: 2ex;
+		position: relative;
+	}
+	ul.bullets li:before,
+	div.cms-content ul li:before,
+	.bullet-list ul li:before {
+		color: #0096c8;
+		content: '\2022';
+		display: block;
+		font-size: 17px;
+		left: -15px;
+		position: absolute;
+		top: 0;
+	}
+
+	ul.bullets.grey li:before {
+		color: #777;
+	}
+
+
+ul.asterisk {
+	margin-bottom: 20px;
+	padding-left: 15px;
+}
+	ul.asterisk li {
+		margin-bottom: 5px;
+		position: relative;
+	}
+	ul.asterisk li:before {
+		content: '*';
+		display: block;
+		left: -15px;
+		position: absolute;
+		top: 0;
+	}
+	ul.asterisk li.no-stars {
+		margin-left: -15px;
+	}
+	ul.asterisk li.no-stars:before {
+		content: '';
+	}
+	ul.asterisk li.two-stars:before {
+		content: '**';
+	}
+	ul.asterisk li.cross:before {
+		content: 'â€ ';
+	}
+
+ol.numbers {
+	list-style: decimal;
+	padding-left: 20px;
+}
+
+
+/*	-----------------------------------
+	Form Elements
+	----------------------------------- */
+/* --- Custom Checkboxes --- */
+input[type="checkbox"] {
+	opacity: 0;
+	position: absolute;
+}
+	input[type="checkbox"] + label {
+		clear: both;
+		display: block;
+		font-family: 'LatoBold';
+		margin-bottom: 12px;
+		padding-left: 25px;
+		position: relative;
+	}
+	/* Styled pseudo input */
+	input[type="checkbox"] + label:before {
+		background: #dbdbdb;
+		border-radius: 2px;
+		color: #dbdbdb;
+		content: '\e620';
+		display: block;
+		font-family: 'icons';
+		font-size: 14px;
+		height: 20px;
+		left: 0;
+		line-height: 20px;
+		margin-right: 10px;
+		position: absolute;
+		text-align: center;
+		top: -2px;
+		width: 20px;
+	}
+	/* Focus state */
+	input[type="checkbox"]:focus + label:before {
+		outline: 1px dotted #3aa4ff;
+	}
+	/* Active state */
+	input[type="checkbox"]:checked + label {
+		color: #2576bc;
+	}
+	input[type="checkbox"]:checked + label:before {
+		background: #2576bc;
+		color: #fff;
+	}
+
+
+/*	-----------------------------------
+	Pagination
+	----------------------------------- */
+div.pagination-bar {
+	border-bottom: 1px solid #dadada;
+	border-top: 1px solid #dadada;
+	margin-bottom: -1px;
+}
+	/* General Styles */
+	div.pagination-bar ul {
+		display: inline-block;
+		font-family: 'LatoBold';
+		font-size: 14px;
+		line-height: 28px;
+		height: 100%;
+		vertical-align: top;
+		white-space: nowrap;
+	}
+	div.pagination-bar ul:after {
+		clear: both;
+		content: '';
+		display: block;
+	}
+		div.pagination-bar li {
+			display: inline-block;
+		}
+
+	/* Sort Options */
+	div.pagination-bar ul.options {
+		font-size: 16px;
+		padding: 10px 0;
+		width: 50%;
+	}
+	div.pagination-bar ul.sort {
+		float: left;
+	}
+	div.pagination-bar ul.items {
+		text-align: right;
+	}
+		ul.options li {
+			border-left: 1px solid #dadada;
+			font-family: 'LatoRegular';
+		}
+		ul.options li:nth-child(1),
+		ul.options li:nth-child(2) {
+			border: none;
+		}
+			ul.options li a {
+				display: block;
+				font-family: 'LatoBold';
+				padding: 0 10px;
+			}
+			ul.options li.active a {
+				color: #777;
+				font-family: 'LatoRegular';
+			}
+				ul.options li.active a:hover {
+					color: #777;
+					cursor: default;
+					text-decoration: none;
+				}
+
+	/* Pagination - Pages */
+	div.pagination-bar div.bottom-row {
+		clear: both;
+		display: inline-block;
+		text-align: center;
+		width: 100%;
+	}
+		div.bottom-row:before {
+			background: #dadada;
+			content: '';
+			display: block;
+			height: 1px;
+			left: 0;
+			position: absolute;
+			width: 100%;
+		}
+		div.pagination-bar ul.pagination {
+			padding: 10px 10px 10px 0;
+		}
+			ul.pagination li {
+				min-width: 28px;
+				text-align: center;
+			}
+				ul.pagination li a {
+					display: block;
+					height: 100%;
+					width: 100%;
+				}
+				ul.pagination li.active a {
+					background: #f5f5f5;
+					border-radius: 50%;
+					color: #777;
+				}
+				ul.pagination li a:hover {
+					color: #3aa4ff;
+				}
+
+				ul.pagination li.ellipses a {
+					color: #777;
+				}
+					ul.pagination li.ellipses a:hover {
+						color: #777;
+						cursor: default;
+						text-decoration: none;
+					}
+
+		/* Pagination - Prev/Next Arrows */
+		div.pagination-bar ul.pagination-nav {}
+			ul.pagination-nav li {
+				border-left: 1px solid #dadada;
+				border-right: 1px solid #dadada;
+				display: block;
+				float: left;
+				height: 48px;
+				margin-left: -1px;
+				position: relative;
+				text-indent: -99999em;
+				vertical-align: top;
+				width: 50px;
+			}
+				ul.pagination-nav li a {
+					display: block;
+					height: 100%;
+					width: 100%;
+				}
+				ul.pagination-nav li a:before {
+					font-size: 24px;
+					height: 100%;
+					padding-top: 12px;
+					text-align: center;
+					width: 100%;
+				}
+				ul.pagination-nav li a:hover {
+					color: #3aa4ff;
+				}
+				ul.pagination-nav li.disabled a {
+					color: #dbdbdb;
+					cursor: default;
+				}
+
+
+/*	-----------------------------------
+	Modal Window
+	----------------------------------- */
+div#overlay {
+	background-color: #000;
+	display: block;
+	min-height: 100%;
+	left: 0;
+	opacity: .7;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 999998;
+}
+div#modal-window {
+	background: #fff;
+	border-radius: 2px;
+	color: #000;
+	display: block;
+	min-height: 300px;
+	margin: 0 auto;
+	opacity: 0;
+	padding: 2%;
+	position: fixed;
+	max-width: 780px;
+	width: 80%;
+	z-index: 999999;
+
+	/* Had to remove this so video would play on ios6 devices*/
+	/*-webkit-transform: translate3d(0,0,0);
+	-webkit-transform: scale(0);
+	   -moz-transform: scale(0);
+	    -ms-transform: scale(0);
+	     -o-transform: scale(0);*/
+}
+div#modal-window.modal-video {
+	min-height: 0;
+}
+	div#modal-window .innerWrapper {
+		z-index: 1;
+	}
+	/* Close Button */
+	#btn-modal-close {
+		background: #2576bc;
+		border: none;
+		border-radius: 50%;
+		cursor: pointer;
+		height: 30px;
+		padding: 0;
+		position: absolute;
+		right: -10px;
+		text-indent: -99999em;
+		text-decoration: none;
+		top: -10px;
+		width: 30px;
+		z-index: 2;
+	}
+		#btn-modal-close:before {
+			color: #fff;
+			content: '\e61b';
+			display: block;
+			font-family: 'icons';
+			font-size: 15px;
+			left: 0;
+			line-height: 30px;
+			position: absolute;
+			text-align: center;
+			text-indent: 0;
+			top: 0;
+			width: 30px;
+		}
+		#btn-modal-close:hover {
+			background: #3aa4ff;
+		}
+
+
+	div.modal-content {
+		display: none;
+	}
+
+	div#modal-window div.modal-content {
+		position: relative;
+		-webkit-backface-visibility: hidden;
+	}
+	div#modal-window div#video-player {
+		background-color: #000;
+		height: 100%;
+		position: relative;
+		width: 100%;
+	}
+
+
+/*	-----------------------------------
+	Preview Popup Window
+	----------------------------------- */
+div.preview-overlay {
+	background: rgba(255,255,255,.5);
+	height: 100%;
+	left: 0;
+	top: 0;
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+}
+/* --- Preview Window --- */
+div.preview-container {
+	background: #fff;
+	box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+	max-width: 100%;
+	opacity: 0;
+	position: absolute;
+	width: 600px;
+	z-index: 2;
+
+	min-height: 200px;
+}
+div.preview-container.loading {
+	background: #fff url('../images/global/loader.gif') center center no-repeat;
+}
+div.preview-container:before,
+div.preview-container:after {
+	background: #dadada;
+	content: '';
+	position: absolute;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+div.preview-container:before {
+	height: 30px;
+	top: 0;
+}
+div.preview-container:after {
+	height: 5px;
+	bottom: 0;
+}
+	/* Close Button */
+	div.preview-container a.preview-close {
+		background: #fff;
+		border-radius: 2px;
+		height: 20px;
+		position: absolute;
+		right: 5px;
+		text-indent: -99999em;
+		text-decoration: none;
+		top: 5px;
+		width: 20px;
+		z-index: 1;
+	}
+		div.preview-container a.preview-close:before {
+			color: #2576bc;
+			font-size: 12px;
+			line-height: 20px;
+			width: 100%;
+			text-align: center;
+		}
+		div.preview-container a.preview-close:hover:before {
+			color: #3aa4ff;
+		}
+
+	/* Content Container Grid */
+	div.preview-container div.preview-content {
+		border-bottom: 5px solid #dadada;
+		border-top: 30px solid #dadada;
+		padding: 20px;
+	}
+	div.preview-container div.preview-content[data-system*="DS"] {
+		border-color: #ce181e;
+	}
+	div.preview-container div.preview-content[data-system*="Wii"] {
+		border-color: #0096c8;
+	}
+	div.preview-container div.preview-content:before {
+		color: #fff;
+		display: block;
+		font-family: 'icons';
+		left: 0;
+		line-height: 30px;
+		position: absolute;
+		text-align: center;
+		top: 0;
+		width: 100%;
+	}
+	div.preview-container div.preview-content[data-system*="DS"]:before {
+		content: '\e619';
+		font-size: 30px;
+	}
+	div.preview-container div.preview-content[data-system*="Wii"]:before {
+		content: '\e61a';
+		font-size: 16px;
+	}
+		/* Video Player */
+		div.preview-content div.video-player {
+			margin-bottom: 20px;
+		}
+
+		/* Title & Details */
+		div.preview-info {}
+			div.preview-info li {
+				margin-bottom: 5px;
+			}
+				div.preview-info li span {
+					color: #484848;
+					font-family: 'LatoBold';
+				}
+		/* Learn More Buttons */
+		div.preview-buttons {}
+			div.preview-buttons li {
+				margin-bottom: 10px;
+				text-align: center;
+			}
+
+
+/*	-----------------------------------
+	Tab Switcher
+	----------------------------------- */
+.tab-switcher {
+	position: relative;
+}
+	.tab-switcher ul.tab-content {
+		position: relative;
+	}
+		.tab-switcher ul.tab-content > li {
+			display: none;
+		}
+			.tab-switcher ul.tab-content > li.active {
+				display: block;
+			}
+	.tab-switcher ul.tab-nav {
+		position: relative;
+	}
+		.tab-switcher ul.tab-nav li {
+			display: inline-block;
+			vertical-align: top;
+		}
+
+
+
+
+/* 	================================================
+
+	DESKTOP VIEW
+
+	================================================ */
+@media screen and (min-width: 769px) {
+
+	/* Hover state */
+	input[type="checkbox"] + label:hover {
+		color: #3aa4ff;
+		cursor: pointer;
+	}
+	input[type="checkbox"] + label:hover:before {
+		color: #c1c1c1;
+	}
+	/* Active state */
+	input[type="checkbox"]:checked + label {
+		color: #2576bc;
+	}
+	input[type="checkbox"]:checked + label:before {
+		background: #2576bc;
+		color: #fff;
+	}
+
+/*	-----------------------------------
+	Pagination
+	----------------------------------- */
+	/* Sort Options */
+	div.pagination-bar ul.options {
+		border-bottom: none;
+		width: auto;
+	}
+	div.pagination-bar ul.sort {
+		float: left;
+		padding-right: 3%;
+	}
+	div.pagination-bar ul.items {
+		text-align: left;
+	}
+	/* Pagination - Pages */
+	div.pagination-bar div.bottom-row {
+		clear: none;
+		float: right;
+		width: auto;
+	}
+		div.bottom-row:before {
+			display: none;
+		}
+}
+
+/* 	================================================
+
+	TABLET VIEW
+
+	================================================ */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+/*	-----------------------------------
+	Backgrounds
+	----------------------------------- */
+	div#page-container.container-gradient:before {
+		top: 160px;
+	}
+
+/*	-----------------------------------
+	Platform Indicators
+	----------------------------------- */
+	/* --- Date with Border --- */
+	.date {
+		color: #999;
+	}
+
+/*	-----------------------------------
+	Buttons
+	----------------------------------- */
+	.btn,
+	.btn-white,
+	.btn-grey {
+		font-size: 18px;
+	}
+	.btn-large {
+		font-size: 30px;
+	}
+
+}
+
+
+/* 	================================================
+
+	MOBILE VIEW
+
+	================================================ */
+@media screen and (max-width: 480px) {
+
+/*	-----------------------------------
+	Backgrounds
+	----------------------------------- */
+	div#page-container.container-gradient:before {
+		top: 140px;
+	}
+	.page-gradient {
+		margin-bottom: 40px;
+	}
+
+/*	-----------------------------------
+	Buttons
+	----------------------------------- */
+	.btn,
+	.btn-white,
+	.btn-grey {
+		font-size: 18px;
+	}
+	.btn-large {
+		font-size: 30px;
+	}
+
+
+/*	-----------------------------------
+	Form Elements
+	----------------------------------- */
+	/* --- Custom Checkboxes --- */
+	input[type="checkbox"] + label {
+		padding-left: 0;
+	}
+	/* Styled pseudo input */
+	input[type="checkbox"] + label:before {
+		left: auto;
+		right: 0;
+	}
+	
+
+/*	-----------------------------------
+	Pagination
+	----------------------------------- */
+	/* General Styles */
+	div.pagination-bar ul {
+		line-height: 20px;
+	}
+	/* Sort Options */
+	div.pagination-bar ul.options {
+		padding: 10px 0;
+	}
+		ul.options li a {
+			padding: 0 5px;
+		}
+
+	/* Pagination - Pages */
+	div.pagination-bar ul.pagination {
+		line-height: 30px;
+		padding: 5px 15px 0 5px;
+	}
+		ul.pagination li {
+			margin-right: 5px;
+			min-width: 30px;
+		}
+		
+		ul.pagination li.ellipses {
+			min-width: 10px;
+		}
+
+	/* Pagination - Prev/Next Arrows */
+	ul.pagination-nav li {
+		height: 40px;
+		width: 30px;
+	}
+		ul.pagination-nav li a:before {
+			font-size: 20px;
+			padding-top: 10px;
+		}
+
+/*	-----------------------------------
+	Accordion Links (similar to footer)
+	----------------------------------- */
+	/* --- Wrapper --- */
+	.accordion {
+		border-bottom: 10px solid #2576bc;
+		max-width: 100%;
+		width: 100%;
+	}
+		/* --- Row --- */
+		.accordion-row {}
+
+			/* --- Expandable Column --- */
+			.accordion-row .column {
+				background: #fff;
+				max-width: 100%;
+				padding: 0;
+			}
+				/* General Styles */
+				.accordion-row .column ul li {
+					padding: 0;
+					margin-bottom: 15px;
+				}
+					/* Links */
+					.accordion-row .column li a {
+						color: #484848;
+						display: block;
+						font-family: 'LatoLight';
+						font-size: 18px;
+					}
+					/* Subhead Links */
+					.accordion-row .column a.b2 {
+						font-size: 22px;
+						font-family: 'LatoRegular';
+						margin-bottom: 20px;
+					}
+					.accordion-row .column.closed ul {
+						display: none;
+					}
+
+				/* Headings */
+				.accordion-row .column  h2 {
+					background: #fafafa;
+					border-top: 1px solid #dadada;
+					color: #2576bc;
+					display: block;
+					font-family: 'LatoBold';
+					font-size: 20px;
+					height: 60px;
+					margin: 0;
+					padding: 20px;
+					position: relative;
+				}
+				.accordion-row .column  h2.trigger {
+					border-bottom: 1px solid #dadada;
+				}
+				.accordion-row .column  h2 a {
+					color: #2576bc;
+					display: block;
+					height: 100%;
+					width: 100%;
+				}
+					/* Arrow Icon */
+					.accordion-row .column  h2.trigger:after {
+						content: '\e60f';
+						display: block;
+						font-family: 'icons';
+						font-size: 20px;
+						position: absolute;
+						right: 25px;
+						top: 20px;
+					}
+
+				/* Closed State */
+				.accordion-row .column.closed h2 {
+					border-bottom: none;
+				}
+					.accordion-row .column.closed h2:after {
+						content: '\e60c';
+					}
+
+				/* --- Open Drawer Links --- */
+				.accordion-row .column  > ul {
+					padding: 20px 20px 10px;
+					display: none;
+				}
+}
+
+/* 	================================================
+
+	3DS Browser Specific Styles
+
+	================================================ */
+body.nin3DS .date {
+	font-size: 14px;
+}
+
+body.nin3DS .accordion-row .column h2 {
+	font-size: 18px;
+}
+
+
+
+/*	================================================
+	
+	Custom styles used in compel
+	
+	================================================ */
+p.gd-footnote{
+	font-size: .8em;
+	line-height: 1.2;
+}
+
