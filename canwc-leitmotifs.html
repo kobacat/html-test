@@ -127,7 +127,7 @@ function openList(str){
 	var list = document.getElementsByClassName("list");
 	for(var i=0; i<list.length; i++){
 	if(str===list[i].id){
-	if(list[i].style.display == "none"){
+	if(list[i].style.display !== "block"){
 		list[i].style.display = "block";
 	}else{
 		list[i].style.display = "none";
