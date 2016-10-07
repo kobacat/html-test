@@ -144,6 +144,9 @@
             li:before {
             content: "> ";
             }
+            .category {
+	    cursor: pointer;
+ 		}
         </style>
         <script>
             var isBlogNSFW = true;
@@ -175,7 +178,7 @@
 				<p>Homestuck Leitmotifs: Leitmotifs in Homestuck that have appeared more than 10 times. <b>*Coming Soon!*</b></p>
                 <p>(Click "Meme Leitmotifs", etc... to open up said column of motifs.)</p>
                 <h3><span class="openclose" onclick="openAll()">Open all</span> | <span class="openclose" onclick="closeAll()">Close all</span></h3>
-				<h3 onclick="openList('memes')">Meme Leitmotifs</h3>
+				<h3 onclick="openList('memes')" class="category">Meme Leitmotifs</h3>
                 <div class="list" id="memes">
 					<br />
 					<h3 class="motif" id="creditmotif" onclick="openList('credit')">Bowman's Credit Score (by Michael "Guy" Bowman)</h3>
@@ -362,7 +365,7 @@
 						</ul>
 					</div>
 				</div>
-				<h3 onclick="openList('canwc')">CaNWC Leitmotifs</h3>
+				<h3 onclick="openList('canwc')" class="category">CaNWC Leitmotifs</h3>
                 <div class="list" id="canwc">
 					<br />
 					<h3 class="motif" id="rctmotif" onclick="openList('rct')">RollerCoaster Tycoon Title Screen Theme (by Allister Brimble)</h3>
