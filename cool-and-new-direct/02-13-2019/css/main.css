@@ -1,0 +1,29 @@
+@media (max-width: 425px) {
+  .footer .archive-link {
+    font-size: .75em;
+  }
+}
+
+section.vod-content .headline-content.threeds {
+  display: none;
+}
+
+section.vod-content .spotlight-tile .text-container {
+  margin-left: 1em;
+}
+
+.new-legal {
+  font-size: .8rem;
+  margin-left: 1em;
+  text-align: center;
+}
+
+.video-modal .section-title .heading:before {
+  left: -24vw;
+  z-index: -1;
+}
+
+.section-title .heading sup, .game-subheader sup, .sub-header sup {
+  vertical-align: super;
+  font-size: smaller;
+}
