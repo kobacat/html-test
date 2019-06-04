@@ -27,3 +27,9 @@ section.vod-content .spotlight-tile .text-container {
   vertical-align: super;
   font-size: smaller;
 }
+.vod-content > .wrapper {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-flow:column;
+}
